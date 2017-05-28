@@ -1,9 +1,7 @@
 package controllers;
 
-import java.util.ArrayList;
 
 import javafx.scene.layout.Pane;
-import models.Quiz;
 import views.QuizmiHomePane;
 
 public class QuizmiHomePageController extends ControllerPlugin{
@@ -13,7 +11,7 @@ public class QuizmiHomePageController extends ControllerPlugin{
 	public QuizmiHomePageController(MainController controller) {
 		super(controller);
 		quizmiHomePane = new QuizmiHomePane();
-		updatePane();
+		//updatePane();
 	}
 
 	@Override
@@ -21,8 +19,9 @@ public class QuizmiHomePageController extends ControllerPlugin{
 		return quizmiHomePane;
 	}
 	
-	public void updatePane(){
-		
+	public void updateComboBox(){
+		quizmiHomePane.quizDropDown.getItems().clear(); //removes all children
+		quizmiHomePane.quizDropDown.getItems().addAll(super.mc.quizzes); //adds all quizzes to combo-box
 	}
 
 }

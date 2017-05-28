@@ -5,7 +5,7 @@ import javafx.scene.layout.Pane;
 
 public abstract class ControllerPlugin {
 	
-	private MainController mc;
+	protected MainController mc;
 	
 	public ControllerPlugin(MainController controller){
 		this.mc = controller;

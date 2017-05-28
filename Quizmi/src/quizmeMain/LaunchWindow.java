@@ -22,7 +22,7 @@ public class LaunchWindow extends Application{
 	public void start(Stage stage) throws Exception {
 		BASE_PANE = new StackPane();
 		stage.setTitle("Quizmi!");
-		SCENE = new Scene(BASE_PANE, 400, 400);
+		SCENE = new Scene(BASE_PANE, 700, 650);
 		stage.setScene(SCENE);
 		stage.show();
 		new MainController();

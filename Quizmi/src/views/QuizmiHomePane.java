@@ -37,7 +37,7 @@ public class QuizmiHomePane extends StackPane{
 	
 	private void initializeButtons(){
 		
-		quizDropDown = new ComboBox();
+		quizDropDown = new ComboBox<>();
 		
 		updateButton = new Button("Update");
 		newQuizButton = new Button("New");
@@ -71,6 +71,8 @@ public class QuizmiHomePane extends StackPane{
 		gp.setHgap(15);
 		gp.setVgap(10);
 		
+		gp.setAlignment(Pos.TOP_CENTER);
+		
 		ColumnConstraints column1 = new ColumnConstraints(150);
 	    ColumnConstraints column2 = new ColumnConstraints(150);
 	    column1.setHgrow(Priority.ALWAYS);
@@ -79,6 +81,7 @@ public class QuizmiHomePane extends StackPane{
 	    
 	    gp.setStyle("-fx-background-color: #b1d1e0;");
 	}
+	
 	private void initializeThis(){
 		//this.setPadding(new Insets(20,20,20,20));
 		this.setStyle("-fx-background-color: #b1d1e0;");

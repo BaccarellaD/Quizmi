@@ -31,7 +31,7 @@ public class MainController {
 		importQuizzes();
 		
 		try {
-			setWindow("home");
+			setWindow("create");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
